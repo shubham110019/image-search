@@ -9,6 +9,8 @@ import Subcat from './page/Subcat';
 import Newapi from './page/Newapi';
 import Photot from './page/Photot';
 import Users from './page/Users';
+import Video from './page/Video';
+import FunHome from './page/FunHome';
 import {
   Switch,
   Route,
@@ -32,6 +34,10 @@ function App() {
       <About/>
       </Route> 
 
+      <Route exact path="/fun">
+        <FunHome/>
+      </Route>
+
       <Route path="/homw2" exact>
       <Homenew/>
       </Route> 
@@ -47,6 +53,12 @@ function App() {
 
         <Route path="/photot/:id" render={props=>(
         <Photot {...props}/>
+      )}>
+        </Route>
+
+
+        <Route path="/video/:id" render={props=>(
+        <Video {...props}/>
       )}>
         </Route>
 

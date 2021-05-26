@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import searchimg from '../img/loupe.svg';
 import { withRouter,Redirect } from 'react-router-dom';
-
-
-
 class Searchbox extends Component {
     constructor()
     {
@@ -14,8 +11,8 @@ class Searchbox extends Component {
         }
         this.myRef = React.createRef();
     }
-    submit = (event) =>{
-        event.preventDefault();
+    submit = (e) =>{
+        e.preventDefault();
         if(this.myRef.current.value === '')
         {
             this.setState({

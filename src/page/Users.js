@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import InfiniteScroll from "react-infinite-scroll-component";
+
 import { Link } from "react-router-dom";
-import loadImg from "../img/loading-buffering.gif";
+
 export default class Users extends Component {
   constructor() {
     super();

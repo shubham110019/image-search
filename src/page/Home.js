@@ -56,7 +56,7 @@ export default class Home extends Component {
           <div className="header-box">
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 offset-lg-3">
+              <div className="col-md-7 mx-auto">
                 <Searchbox />
               </div>
             </div>
